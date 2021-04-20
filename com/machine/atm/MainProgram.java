@@ -14,7 +14,7 @@ public class MainProgram
         Scanner input = new Scanner(System.in);
         Menu menu = new Menu();
 
-        System.out.print("Welcome to the ATM Project!\n\nEnter Your Customer Number: ");
+        System.out.print("Welcome to the ATM Project!\nEnter Your Customer Number: ");
         long typedAccountNumber = input.nextLong();
         System.out.print("Enter Your Pin Number: ");
         short typedAccountPin = input.nextShort();
@@ -25,7 +25,8 @@ public class MainProgram
         }
         else
         {
-            System.out.println("\nAccount or Pin is Wrong!");
+            System.out.println("\nWrong Customer Number or Pin Number.\n");
+            main(args);
         }
     }
 }

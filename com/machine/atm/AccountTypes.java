@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class AccountTypes
 {
     Scanner input = new Scanner(System.in);
-    BankingTransaction bankingTransaction = new BankingTransaction();
+    AtmTransaction atmTransaction = new AtmTransaction();
     MainProgram mainProgram = new MainProgram();
 
     public void accountType(int type)
@@ -37,12 +37,13 @@ public class AccountTypes
                 menu.mainMenu();
                 break;
             case 2:
-                bankingTransaction.withdrawFunds(type);
+                atmTransaction.withdrawFunds(type);
                 break;
             case 3:
-                bankingTransaction.depositFunds(type);
+                atmTransaction.depositFunds(type);
                 break;
             case 4:
+                System.out.println("\nThank You for using this ATM, bye.");
                 System.exit(0);
                 break;
         }

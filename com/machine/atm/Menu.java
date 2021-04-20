@@ -24,6 +24,7 @@ public class Menu
         }
         else if (mainStep==3)
         {
+            System.out.println("\nThank You for using this ATM, bye.");
             System.exit(0);
         }
     }
