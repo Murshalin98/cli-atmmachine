@@ -1,10 +1,13 @@
 package com.machine.atm;
 import java.util.Scanner;
 
-public class MainProgram {
-    double accountBalance = 1000;
+public class MainProgram
+{
+    double checkingAccountBalance = 1000;
+    double savingAccountBalance = 1500;
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         long accountNumber = 8989898;
         short accountPin = 1890;
 
@@ -16,10 +19,12 @@ public class MainProgram {
         System.out.print("Enter Your Pin Number: ");
         short typedAccountPin = input.nextShort();
 
-        if (typedAccountNumber==accountNumber && typedAccountPin==accountPin) {
+        if (typedAccountNumber==accountNumber && typedAccountPin==accountPin)
+        {
             menu.mainMenu();
         }
-        else {
+        else
+        {
             System.out.println("\nAccount or Pin is Wrong!");
         }
     }
