@@ -1,13 +1,11 @@
 package com.machine.atm;
 import java.util.Scanner;
 
-public class AtmTransaction
-{
+public class AtmTransaction {
     Scanner input = new Scanner(System.in);
     MainProgram mainProgram = new MainProgram();
 
-    public void depositFunds(int type)
-    {
+    public void depositFunds(int type) {
         Menu menu = new Menu();
         String Type = null;
         String action = null;
@@ -36,8 +34,7 @@ public class AtmTransaction
         menu.mainMenu();
     }
 
-    public void withdrawFunds(int type)
-    {
+    public void withdrawFunds(int type) {
         Menu menu = new Menu();
         String Type = null;
         double accountBalance = 0;

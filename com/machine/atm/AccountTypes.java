@@ -1,14 +1,12 @@
 package com.machine.atm;
 import java.util.Scanner;
 
-public class AccountTypes
-{
+public class AccountTypes {
     Scanner input = new Scanner(System.in);
     AtmTransaction atmTransaction = new AtmTransaction();
     MainProgram mainProgram = new MainProgram();
 
-    public void accountType(int type)
-    {
+    public void accountType(int type) {
         Menu menu = new Menu();
         String Type = null;
         double accountBalance = 0;
@@ -30,8 +28,7 @@ public class AccountTypes
                 "Choice: ");
         byte typeStep = input.nextByte();
 
-        switch (typeStep)
-        {
+        switch (typeStep) {
             case 1:
                 System.out.print("\n"+ Type +" Account Balance: $"+ accountBalance +"\n");
                 menu.mainMenu();
